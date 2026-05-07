@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "443d25f8-b9b0-4820-ac72-1599147c99ac",
             "zIndex": -1,
+            "id": "443d25f8-b9b0-4820-ac72-1599147c99ac",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Intern Server\n",
@@ -55,8 +55,8 @@
           },
           {
             "position": {
-              "x": 230.9999999999995,
-              "y": 140.00000000000045
+              "x": 246.25,
+              "y": 155
             },
             "size": {
               "width": 200,
@@ -69,8 +69,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "62a533ff-44da-48f6-af0b-cc2ce3ac1b97",
             "zIndex": -1,
+            "id": "62a533ff-44da-48f6-af0b-cc2ce3ac1b97",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Internet\n",
@@ -106,6 +106,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -189,7 +190,6 @@
               ]
             },
             "id": "4e394dc7-65bf-4fa7-a4d3-79d90d5f5ea1",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Mitarbeiter",
@@ -457,7 +457,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -468,13 +468,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "E-Mail\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
@@ -482,7 +482,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "E-Mail"
             ],
             "id": "47b6ea52-0c32-4081-87c1-021f62d2ab28",
             "source": {
@@ -502,47 +502,7 @@
                 "x": 660,
                 "y": 430
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
@@ -565,6 +525,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -648,7 +609,6 @@
               ]
             },
             "id": "f97d7625-ab18-4314-b573-cfe376b2a8ec",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Client\n",
@@ -688,6 +648,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -771,7 +732,6 @@
               ]
             },
             "id": "91c5dc3c-dc1b-4317-acd7-397509e6a841",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "OAtuth2",
@@ -805,6 +765,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -888,7 +849,6 @@
               ]
             },
             "id": "2273b1f5-8b85-4143-ad35-17965faac0f9",
-            "zIndex": 13,
             "data": {
               "type": "tm.Actor",
               "name": "Kunden/Partnern\n",
@@ -922,6 +882,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1005,7 +966,6 @@
               ]
             },
             "id": "e1529b5a-a736-4e6a-ac5d-47481419dab0",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "E-Mail-Server\n",
@@ -1042,6 +1002,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1125,7 +1086,6 @@
               ]
             },
             "id": "658d01a3-721d-42fe-ab02-c8f6ba226280",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Produktion\n",
@@ -1162,6 +1122,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1245,7 +1206,6 @@
               ]
             },
             "id": "9f4fdecb-96eb-42dc-8f32-9b145722e1d8",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Personal\n",
