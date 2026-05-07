@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 500.99999999999864,
-              "y": 135
+              "x": 530.9999999999986,
+              "y": 155
             },
             "size": {
               "width": 330,
@@ -43,21 +43,15 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "a1510fe4-74b7-48b7-98a6-eaa9b1e97034",
-                "c0468252-9d0a-4c7f-9afa-76de38cf2630",
-                "47b6ea52-0c32-4081-87c1-021f62d2ab28"
+                "316b7668-525e-4f2f-b049-7794b853466e",
+                "47b6ea52-0c32-4081-87c1-021f62d2ab28",
+                "394530cc-95ad-4d2f-a9c9-d51528ac40f2"
               ],
               "containedElements": [
                 "e1529b5a-a736-4e6a-ac5d-47481419dab0",
                 "658d01a3-721d-42fe-ab02-c8f6ba226280",
                 "9f4fdecb-96eb-42dc-8f32-9b145722e1d8"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -86,8 +80,8 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "782ef113-45b1-4bf9-ae8e-2bf78d377c1c",
-                "c0468252-9d0a-4c7f-9afa-76de38cf2630",
-                "47b6ea52-0c32-4081-87c1-021f62d2ab28"
+                "47b6ea52-0c32-4081-87c1-021f62d2ab28",
+                "394530cc-95ad-4d2f-a9c9-d51528ac40f2"
               ],
               "containedElements": [
                 "f97d7625-ab18-4314-b573-cfe376b2a8ec",
@@ -261,12 +255,16 @@
             },
             "vertices": [
               {
+                "x": 210,
+                "y": 570
+              },
+              {
                 "x": 360,
                 "y": 530
               },
               {
-                "x": 540,
-                "y": 500
+                "x": 460,
+                "y": 530
               }
             ]
           },
@@ -349,20 +347,28 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "443d25f8-b9b0-4820-ac72-1599147c99ac"
+              ]
             },
             "labels": [
               "Data Flow"
             ],
-            "id": "f9aaa6a5-d8e7-42b3-aa73-208cd3b1ecce",
+            "id": "316b7668-525e-4f2f-b049-7794b853466e",
             "source": {
-              "x": 620,
-              "y": 300
+              "x": 380,
+              "y": 390
             },
             "target": {
-              "x": 715,
-              "y": 395
-            }
+              "cell": "9f4fdecb-96eb-42dc-8f32-9b145722e1d8",
+              "port": "8674df63-7494-4285-8145-7d21ce2efc24"
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 390
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -373,7 +379,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
+                  "name": ""
                 },
                 "strokeDasharray": null
               }
@@ -384,32 +390,29 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Access\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": true,
+              "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "443d25f8-b9b0-4820-ac72-1599147c99ac",
-                "62a533ff-44da-48f6-af0b-cc2ce3ac1b97"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Access"
             ],
-            "id": "c0468252-9d0a-4c7f-9afa-76de38cf2630",
+            "id": "5bd0ea4c-2c59-40df-8a8a-56baef4513f2",
             "source": {
-              "cell": "f97d7625-ab18-4314-b573-cfe376b2a8ec",
-              "port": "88d6db46-f8bf-45b9-bb22-067f5ec827cd"
+              "cell": "91c5dc3c-dc1b-4317-acd7-397509e6a841",
+              "port": "e489bc89-6176-4f15-9b7a-d495d4803501"
             },
             "target": {
-              "cell": "658d01a3-721d-42fe-ab02-c8f6ba226280",
+              "cell": "f97d7625-ab18-4314-b573-cfe376b2a8ec",
               "port": "8674df63-7494-4285-8145-7d21ce2efc24"
             }
           },
@@ -463,12 +466,16 @@
             },
             "vertices": [
               {
-                "x": 640,
+                "x": 460,
                 "y": 410
               },
               {
-                "x": 660,
-                "y": 430
+                "x": 580,
+                "y": 460
+              },
+              {
+                "x": 640,
+                "y": 480
               }
             ]
           },
@@ -492,7 +499,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Access\n",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -503,140 +510,30 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "443d25f8-b9b0-4820-ac72-1599147c99ac",
+                "62a533ff-44da-48f6-af0b-cc2ce3ac1b97"
+              ]
             },
             "labels": [
-              "Access"
+              "Data Flow"
             ],
-            "id": "5bd0ea4c-2c59-40df-8a8a-56baef4513f2",
+            "id": "394530cc-95ad-4d2f-a9c9-d51528ac40f2",
             "source": {
-              "cell": "91c5dc3c-dc1b-4317-acd7-397509e6a841",
-              "port": "78bfb584-f648-4ce8-97a0-d8ec685c9856"
+              "cell": "f97d7625-ab18-4314-b573-cfe376b2a8ec",
+              "port": "f23c4247-9d9e-4773-9837-b8dc780b2d74"
             },
             "target": {
-              "cell": "f97d7625-ab18-4314-b573-cfe376b2a8ec",
+              "cell": "658d01a3-721d-42fe-ab02-c8f6ba226280",
               "port": "8674df63-7494-4285-8145-7d21ce2efc24"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": [],
+            "parent": "f97d7625-ab18-4314-b573-cfe376b2a8ec"
           },
           {
             "position": {
-              "x": 316.25,
-              "y": 330
+              "x": 306.25,
+              "y": 355
             },
             "size": {
               "width": 60,
@@ -753,7 +650,7 @@
               "threats": []
             },
             "children": [
-              "171fde7f-654d-45d5-9044-269378c8b01f"
+              "394530cc-95ad-4d2f-a9c9-d51528ac40f2"
             ]
           },
           {
@@ -767,7 +664,7 @@
             },
             "attrs": {
               "text": {
-                "text": "OAtuth"
+                "text": "OAtuth2"
               },
               "body": {
                 "stroke": "#333333",
@@ -863,7 +760,7 @@
             "id": "91c5dc3c-dc1b-4317-acd7-397509e6a841",
             "data": {
               "type": "tm.Actor",
-              "name": "OAtuth2",
+              "name": "OAtuth2\n",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -887,8 +784,8 @@
                 "text": "Kunden/Partnern"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -985,9 +882,23 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "707560b6-cfbb-4a9d-9c54-9754283da8d5",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 1,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -1356,6 +1267,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
